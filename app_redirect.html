@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script>
+        let ready = $(document).ready(function (){
+            if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+                window.location.href = 'https://play.google.com/store/apps/details?id=cz.artin.triphood';
+            }
+            if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+                window.location.href = 'https://apps.apple.com/app/id957769382';
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="download-links">
+    <a href="https://apps.apple.com/app/id957769382" class="appstore">
+        <img src="btn-appstore.png" alt="odkaz do AppStore">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=cz.artin.triphood" class="googleplay">
+        <img src="btn-googleplay.png" alt="odkaz do GooglePlay">
+    </a>
+</div>
+</body>
+</html>
